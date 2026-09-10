@@ -41,12 +41,15 @@ if (-not $ImageTag) {
 }
 
 $repositoryUri = aws ecr describe-repositories `
-    --repository-names $RepositoryName `
     --region $Region `
-    --query "repositories[0].repositoryUri" `
-    --output text 2>$null
+    --query "repositories[?repositoryName=='$RepositoryName'].repositoryUri | [0]" `
+    --output text
 
 if ($LASTEXITCODE -ne 0) {
+    throw "Could not query ECR repositories."
+}
+
+if (-not $repositoryUri -or $repositoryUri -eq "None") {
     Write-Host "Creating ECR repository '$RepositoryName'..."
     $repositoryUri = aws ecr create-repository `
         --repository-name $RepositoryName `
