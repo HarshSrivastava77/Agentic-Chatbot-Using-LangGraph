@@ -1,0 +1,67 @@
+[theme]
+font = "'Plus Jakarta Sans':https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+headingFont = "Sora:https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&display=swap"
+codeFont = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+baseFontSize = 16
+baseFontWeight = 400
+headingFontSizes = ["36px", "26px", "20px", "17px", "15px", "13px"]
+headingFontWeights = [700, 650, 600, 600, 600, 600]
+linkUnderline = false
+baseRadius = "8px"
+buttonRadius = "8px"
+showWidgetBorder = true
+showSidebarBorder = false
+
+[theme.light]
+primaryColor = "#B83A2B"
+backgroundColor = "#F8FAF8"
+secondaryBackgroundColor = "#EAF0EC"
+textColor = "#17221D"
+linkColor = "#176B73"
+codeTextColor = "#17332D"
+codeBackgroundColor = "#E2EAE5"
+borderColor = "#C8D4CD"
+redColor = "#B83A2B"
+orangeColor = "#A85F18"
+yellowColor = "#8A6C12"
+greenColor = "#287454"
+blueColor = "#176B73"
+violetColor = "#70558F"
+grayColor = "#65736C"
+chartCategoricalColors = ["#176B73", "#B83A2B", "#287454", "#A85F18", "#70558F", "#47709C"]
+
+[theme.dark]
+primaryColor = "#FF8065"
+backgroundColor = "#101915"
+secondaryBackgroundColor = "#18241F"
+textColor = "#ECF2EE"
+linkColor = "#75C8C1"
+codeTextColor = "#D7E7DF"
+codeBackgroundColor = "#0C1411"
+borderColor = "#30443A"
+redColor = "#FF8065"
+orangeColor = "#E9A35D"
+yellowColor = "#D8C36A"
+greenColor = "#68BF90"
+blueColor = "#75C8C1"
+violetColor = "#B29ACB"
+grayColor = "#9AA9A1"
+chartCategoricalColors = ["#75C8C1", "#FF8065", "#68BF90", "#E9A35D", "#B29ACB", "#7EA4CD"]
+
+[theme.light.sidebar]
+backgroundColor = "#14251F"
+secondaryBackgroundColor = "#1D342C"
+textColor = "#F4F7F4"
+primaryColor = "#FF8065"
+linkColor = "#8FD6CB"
+borderColor = "#315044"
+codeBackgroundColor = "#0E1C18"
+
+[theme.dark.sidebar]
+backgroundColor = "#0A110E"
+secondaryBackgroundColor = "#132019"
+textColor = "#F4F7F4"
+primaryColor = "#FF8065"
+linkColor = "#75C8C1"
+borderColor = "#263A30"
+codeBackgroundColor = "#070C0A"
