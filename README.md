@@ -1,5 +1,7 @@
 # Agentic Chatbot with LangGraph
 
+[![CI](https://github.com/HarshSrivastava77/Agentic-Chatbot-Using-LangGraph/actions/workflows/ci.yml/badge.svg)](https://github.com/HarshSrivastava77/Agentic-Chatbot-Using-LangGraph/actions/workflows/ci.yml)
+
 A Streamlit chatbot that uses Groq and LangGraph to select tools, retrieve information from uploaded PDFs, persist conversations, and pause for human approval before sensitive actions.
 
 ## Features
@@ -304,7 +306,6 @@ To reset conversation history, stop the app and remove `chatbot.db`. To reset do
 - Isolate uploaded document indexes by conversation or authenticated user.
 - Add authentication before deploying beyond a trusted local environment.
 - Add mocked integration tests for graph interrupts and API failures.
-- Add continuous integration for tests, compilation, and dependency checks.
 - Replace pickle-backed FAISS metadata with a safer portable storage format.
 
 ## Contributing
